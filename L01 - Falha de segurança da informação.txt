@@ -1,0 +1,32 @@
+﻿Leticia Woelfer de Oliveira e Luiz Carlos Burigo
+Lista de Exercícios 01
+
+Caso 1: No caso 1 podemos perceber que o aspecto de confidencialidade foi comprometido, pois o servidor de cloud da empresa podia ser acessado livremente sem precisar de usuário e senha. Com isso, foi possível visualizar imagens configuradas como privadas pelos usuários da Theta.
+
+Caso 2: a integridade da informação foi comprometida quando o sistema possuia uma falha permitindo a alteração do valor final de um pedido enviado a um restaurante. Além disso, não era feito nenhuma validação entre os preços dos itens com os preços cadastrados pelo restaurante.
+
+Caso 3: o aspecto da confidencialidade foi comprometido quando o usuário que estava ligando conseguia ver e ouvir o outro usuário antes mesmo de ele ter atendido.
+
+Caso 4: ocorreu uma falha de confidencialidade no iTunes sendo permitido acessar contas de outros usuários. Devido a isso, a empresa comprometeu a disponibilidade do sistema para corrigir essa falha, deixando o sistema indisponível para alteração de senha.
+
+Caso 5: alguém se passando pelo sistema do boticário estava aplicando golpes solicitando que o usuário acessasse um link falso que não era autenticado comprovando que era realmente o boticário.
+
+Caso 6: o sistema de pesquisa anonimo estava gravando log com data, hora e usuário, comprometendo o aspecto de privacidade, sendo que o mesmo deveria manter o usuário anonimo.
+
+Caso 7: foi comprometido o aspecto de irrefutabilidade ou não repúdio devido a receita federal não poder comprovar que aquela nota foi emitida pela empresa em questão.
+
+Questão 2:
+Disponibilidade (não possibilitar acesso a informação): https://noticias.uol.com.br/tecnologia/noticias/redacao/2019/07/03/internautas-relatam-falhas-no-whatsapp-facebook-twitter-e-instagram.htm
+O whatsapp, facebook e instagram ficaram indisponíveis ou parcialmente indisponíveis no dia 03/07/2019. A empresa demorou algumas horas para se manifestar sobre o caso, mas no mesmo dia informou que a indisponibilidade foi causada por uma "operação de manutenção de rotina". A impresa se desculpou por um comunicado e até o início da noite todos os serviços tinham voltado a funcionar.
+
+Integridade: (Impedir que uma informação seja alterada sem autorização): https://videos.band.uol.com.br/cafecomjornal/16248789/hacker-e-preso-por-invadir-site-de-empresa-de-saude.html
+Uma empresa do ramo de saúde em São Paulo teve seus dados violados e começou a sofrer com a perda moral e financeira. O hacker começou a inserir informações falsas sobre a instituição e exigiu cerca de R$ 15.000,00 para cessar com os ataques. O proprietário em desespero chegou a pagar R$ 5.000,00 para o criminoso. O autor dos ataques alegou que foi contratado por uma empresa concorrente.
+
+Confidencialidade: (Apenas pessoas autorizadas podem ter acesso à informação): https://computerworld.com.br/2018/07/12/10-grandes-falhas-da-tecnologia-nos-ultimos-anos/
+Em fevereiro de 2017, a Cloudflare enfrentou um grande bug de software que vazou dados confidenciais de clientes, como senhas, cookies e tokens de autenticação.
+A Cloudflare é conhecida por fornecer serviços de desempenho e segurança para milhões de sites de clientes e, embora a falha tenha sido corrigida em questão de horas, estima-se que o vazamento de dados possa ter começado em setembro de 2016. 
+
+	
+
+
+

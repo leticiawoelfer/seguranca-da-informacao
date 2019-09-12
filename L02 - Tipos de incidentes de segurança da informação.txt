@@ -1,0 +1,60 @@
+﻿Leticia Woelfer de Oliveira e Luiz Carlos Burigo
+Lista de Exercícios 02
+
+Questão 1:
+a)O ativo que vai estar vulnerável é o servidor, que pode ser acidentalmente desligado durante a limpeza da sala. O que está causando essa possível vulnerabilidade é o ambiente que está com os cabos de energia desorganizados.
+
+b) A versão do sistema operacional do celular do Márcio está muito desatualizada, pois a empresa parou de dar suporte para a versão final de 2018. Para os desenvolvedores poderem publicar app na playstore, é requerido um nível mínimo de segurança e a versão 4.0 do sistema não atinge esse mínimo. O ativo vulnerável é o celular e ele é categorizado como tecnologias que suportam a informação.
+
+c) O ativo é o Juliano, como ele está vulnerável e não vai poder comparecer, possivelmente processos que somente ele executa ficaram indisponíveis naquele dia. Isso fica caracterizado como uma vulnerabilidade de  “Pessoas e processos”.
+
+d) O ativo é o switch e a vulnerabilidade é que não foi alterada a configuração padrão, deixando de interligar diretamente as estações, e consequentemente não funcionando. A categoria é "tecnologias que suportam a informação".
+ 
+e) Os ativos são Pedro e Lúcia, a vulnerabilidade é que eles vão ter acesso a um sistema desconhecido sem receber nenhum treinamento, podendo comprometer o funcionamento do sistema. É caracterizado por “Pessoas e processos”.
+
+f) O ativo em questão é o Jonas, o despreparo do mesmo pode causar falhas de processo quando de fato for necessario que Jonas execute qualquer ação sobre os servidores sendo que ele não conhece a todos.
+
+g) Os relatórios são os ativos, eles contém informações confidenciais que estão ficando vulneráveis ao serem jogadas no lixo comum sem passar pelo triturador. A situação é caracterizada como “Pessoas e processos”.
+
+h) O ativo é o Pedro, ao cadastrar uma senha tão simples torna-se facil a outros usuários descobrirem a senha do Pedro e assim se passarem pelo mesmo. Essa situação é caracterizada como "Pessoas e processos".
+
+i) O ativo é o servidor que está em uma sala que não mantem controle de acesso e sendo assim uma pessoa despreparada ou até mal intencionada poderia vir a causar algum dano ao servidor. Essa o problema caracterizado é o "ambiente".
+
+j) O ativo é os profissionais, a situação em sí impede de que o profissionais possam ir trabalhar. Processos que dependem desses profissionais serão afetados. Esse problema se caracteriza como "pessoas e processos".
+
+k) O PC citado e o ativo e não tem tecnologia para suportar tal softwarer, o problema aqui citado está relacionado a "tecnologias que suportam a informação".
+
+l) Nesse caso o ativo é o pen drive. A vulnerabilidade é o fato do pen drive ser pequeno e fácil de perder, o que pode resultar na perda dos dados da Mônica. O ativo fica caracterizado com “tecnologias que suportam a informação”.
+
+m) O ativo é o Fábio que instalou programar que não fazem parte dos necessários para executar seu trabalho no computador da empresa. Se caracteriza como “Pessoas e processo”.
+
+n) O ativo é o Lucas e a segurança da empresa pode estar em risco quando os funcionários não tem conhecimento das medidas de segurança que devem ser levadas em conta no dia-a-dia. A categoria é “Pessoas e processo”.
+
+o) O ativo é a Cristiane e a vulnerabilidade pode ser observada quando os dados estão numa planilha desprotegida que foi enviada por e-mail, que também possui segurança baixa. A categoria é “Pessoas e processo”.
+
+p) O ativo é a vaga para especialista de segurança e a vulnerabilidade é que com a falta de um profissional nessa vaga, a parte de segurança da empresa vai estar desatualizada. A categoria é “Pessoas e processo”.
+
+Questão 2
+
+Caso 1 - O objetivo do ataque foi apropriaçao de um valor financeiro, ao desviar os 30.950.010 dos chamados "tokens" da criptomoeda Tether o hacker poderá obter facilmante ganho financeiro tendo em vista que o fim para as criptomoedas dificilmente será rastreada.  
+
+Caso 2 - O objetivo é tonar o site do banco indisponivel ao derrubar o mesmo, o que não está claro é a motivação. Poderia ser um grupo de hacker contratados por concorrentes, ex-funcionarios ou até mesmo um grupo interessado em ganho financeiro ao chantagear o banco. 
+
+Caso 3 - O objetivo era explorar conceitos aprendidos na univerdade referente as configurações do servidor de páginas Apache.
+
+Caso 4 - O objetivo era se vingar da empresa pois não havia ficado satisfeito com sua demissão.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

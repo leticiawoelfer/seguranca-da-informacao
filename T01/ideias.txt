@@ -1,0 +1,12 @@
+Aplicação gera muitos logs:
+
+ideia 1:
+Na tela de login o sistema gera log sempre que é feito uma tentativa de login e senha.
+A vulnerabilidade será que alguém vai colocar um problama para fazer isso milhares de vezes, fazendo com que o sistema gere um volume grande de logs, ocupe muito espaço em disco e possívelmente gere uma indisponibilidade do sistema.
+A solução vai ser só logar quando é informado um usuário válido, porém dessa forma ainda será possivel inserir varias senhas e ainda poder causar a indisponibilidade. Então terá um limite de 5 tentativas de login por usuário, se errar as 5, fica 15 minutos sem poder acessar.
+
+Injeção de logs fakes:
+
+ideia 1:
+inserir um caracter que vai corromper o log no campo de login
+a correção é validar o campo de login para que contenha só o nome de usuario realmente antes de logar a informação toda.

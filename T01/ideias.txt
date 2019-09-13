@@ -10,3 +10,6 @@ Injeção de logs fakes:
 ideia 1:
 inserir um caracter que vai corromper o log no campo de login
 a correção é validar o campo de login para que contenha só o nome de usuario realmente antes de logar a informação toda.
+
+ideia 2:
+Conhecer o padrao de log e usar um input do sistema para inserir logs suspeitos que vão confundir posteriormente.

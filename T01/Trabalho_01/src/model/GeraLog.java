@@ -35,8 +35,14 @@ public class GeraLog {
 
         File arquivo = new File(arq);
 
-        if (!arquivo.exists()) {
+        if (arquivo.exists() && arquivo.length() >= 1000000) {
+            arquivo.delete();
             arquivo.createNewFile();
+        }
+        else{
+            if (!arquivo.exists()){
+                 arquivo.createNewFile();
+            }
         }
 
         Date hoje = new Date();

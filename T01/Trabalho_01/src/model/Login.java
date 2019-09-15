@@ -77,7 +77,7 @@ public class Login {
 
         if (resultadoConsulta == null) {
             GeraLog log = new GeraLog();
-            String msg = "Erro - login ou login inválido [" + login + senha + "]";
+            String msg = "Erro - login ou senha inválido [" + login + senha + "]";
             log.gravar("Cadastro.log", msg);
             JOptionPane.showMessageDialog(null, "Login ou Senha inválidos");
         }

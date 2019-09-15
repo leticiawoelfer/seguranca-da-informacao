@@ -25,7 +25,7 @@ import static javax.print.attribute.Size2DSyntax.MM;
  */
 public class GeraLog {
 
-    private String diretorio = "C:/trabalho_5";
+    private String diretorio = "C:/trabalho_01";
 
     public GeraLog() {
     }

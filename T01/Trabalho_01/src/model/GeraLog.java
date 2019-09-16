@@ -11,13 +11,9 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.text.SimpleDateFormat;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.time.format.FormatStyle;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import static javax.print.attribute.Size2DSyntax.MM;
 
 /**
  *
@@ -25,25 +21,18 @@ import static javax.print.attribute.Size2DSyntax.MM;
  */
 public class GeraLog {
 
-    private String diretorio = "C:/trabalho_01";
-
-    public GeraLog() {
-    }
+    private final String diretorio = "C:/trabalho_01";
 
     public void gravar(String nomeArquivo, String msg) throws IOException {
         String arq = diretorio + "/" + nomeArquivo;
-
         File arquivo = new File(arq);
-
+        
         if (arquivo.exists() && arquivo.length() >= 1000000) {
             arquivo.delete();
             arquivo.createNewFile();
-        }
-        else{
-            if (!arquivo.exists()){
-                 arquivo.createNewFile();
-            }
-        }
+        } else if (!arquivo.exists()){
+            arquivo.createNewFile();
+        }       
 
         Date hoje = new Date();
         SimpleDateFormat df;

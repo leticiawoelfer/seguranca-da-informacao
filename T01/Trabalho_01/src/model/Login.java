@@ -28,6 +28,8 @@ import java.sql.Struct;
 import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.Executor;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 /**
@@ -60,27 +62,30 @@ public class Login {
         this.senha = senha;
     }
 
-    public void logar() throws SQLException, IOException {
-
+    public void logar() {
         String sqlString = "SELECT * FROM PESSOA WHERE LOGIN = ? AND SENHA = ?";
-        Connection conn = ConexaoMySQL.getConexaoMySQL();
-        PreparedStatement ps = conn.prepareStatement(sqlString);
-        ps.setString(1, login);
-        ps.setString(2, senha);
-        ResultSet rs = ps.executeQuery();
+        Connection conn;
+        PreparedStatement ps;
+        try {
+            conn = ConexaoMySQL.getConexaoMySQL();
+            ps = conn.prepareStatement(sqlString);        
+            ps.setString(1, login);
+            ps.setString(2, senha);
+            ResultSet rs = ps.executeQuery();
 
-        String resultadoConsulta = null;
-        if (rs.next() == true) {
-            resultadoConsulta = rs.getString("nome");
-            JOptionPane.showMessageDialog(null, "Bem vindo " + resultadoConsulta);
+            String resultadoConsulta = null;
+            if (rs.next() == true) {
+                resultadoConsulta = rs.getString("nome");
+                JOptionPane.showMessageDialog(null, "Bem vindo " + resultadoConsulta);
+            }
+            if (resultadoConsulta == null) {
+                GeraLog log = new GeraLog();
+                String msg = "Erro - login ou senha inválido [" + login + senha + "]";
+                log.gravar("Cadastro.log", msg);
+                JOptionPane.showMessageDialog(null, "Login ou Senha inválidos");
+            }
+        } catch (SQLException | IOException ex) {
+            Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
         }
-
-        if (resultadoConsulta == null) {
-            GeraLog log = new GeraLog();
-            String msg = "Erro - login ou senha inválido [" + login + senha + "]";
-            log.gravar("Cadastro.log", msg);
-            JOptionPane.showMessageDialog(null, "Login ou Senha inválidos");
-        }
-
     }
 }

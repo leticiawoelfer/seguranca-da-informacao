@@ -21,9 +21,15 @@ import java.util.List;
  */
 public class GeraLog {
 
-    private final String diretorio = "C:/trabalho_01";
-
-    public void gravar(String nomeArquivo, String msg) throws IOException {
+    private String diretorio;
+    private String nomeArquivo;
+    
+    public GeraLog(String dir, String nomeArq){
+        this.diretorio = dir;
+        this.nomeArquivo = nomeArq;
+    }
+    
+    public void gravar(String msg) throws IOException {
         String arq = diretorio + "/" + nomeArquivo;
         File arquivo = new File(arq);
         
@@ -41,6 +47,19 @@ public class GeraLog {
         List<String> lista = new ArrayList<>();
         lista.add("=============================================================================================");
         lista.add(df.format(hoje) + " - " + msg);
+
+        Files.write(Paths.get(arquivo.getPath()), lista, StandardOpenOption.APPEND);
+    }
+    
+    public void gravarLogTransacao(String msg) throws IOException{
+        SimpleDateFormat df = new SimpleDateFormat("dd-MM-yy-HH");
+        File arquivo = new File(diretorio + nomeArquivo +"_"+df.format(new Date())+"hrs.log");        
+        if (!arquivo.exists()) {
+            arquivo.createNewFile();
+        }
+        df = new SimpleDateFormat("dd/MM/yyyy hh:mm:ss.SSS");
+        List<String> lista = new ArrayList<>();
+        lista.add(df.format(new Date()) + " - " + msg);
 
         Files.write(Paths.get(arquivo.getPath()), lista, StandardOpenOption.APPEND);
     }

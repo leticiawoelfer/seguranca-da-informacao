@@ -6,28 +6,11 @@
 package model;
 
 import conectionMsql.ConexaoMySQL;
-import static com.sun.corba.se.spi.presentation.rmi.StubAdapter.request;
 import java.io.IOException;
-import static java.lang.System.out;
-import java.sql.Array;
-import java.sql.Blob;
-import java.sql.CallableStatement;
-import java.sql.Clob;
 import java.sql.Connection;
-import java.sql.DatabaseMetaData;
-import java.sql.NClob;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.SQLClientInfoException;
 import java.sql.SQLException;
-import java.sql.SQLWarning;
-import java.sql.SQLXML;
-import java.sql.Savepoint;
-import java.sql.Statement;
-import java.sql.Struct;
-import java.util.Map;
-import java.util.Properties;
-import java.util.concurrent.Executor;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
@@ -79,9 +62,9 @@ public class Login {
                 JOptionPane.showMessageDialog(null, "Bem vindo " + resultadoConsulta);
             }
             if (resultadoConsulta == null) {
-                GeraLog log = new GeraLog();
+                GeraLog log = new GeraLog("C:/trabalho_01", "Cadastro.log");
                 String msg = "Erro - login ou senha inválido [" + login + senha + "]";
-                log.gravar("Cadastro.log", msg);
+                log.gravar(msg);
                 JOptionPane.showMessageDialog(null, "Login ou Senha inválidos");
             }
         } catch (SQLException | IOException ex) {

@@ -197,8 +197,10 @@ public class TelaTransferenciaBancaria extends javax.swing.JFrame {
         try {
             if (jRadioButton1.isSelected()) {
                 tb.sacar();
+                JOptionPane.showMessageDialog(null, "Saque realizado com sucesso!");
             } else if (jRadioButton2.isSelected()) {
                 tb.transferir();
+                JOptionPane.showMessageDialog(null, "Transferência realizada com sucesso!");
             }
         } catch (Exception ex) {
             JOptionPane.showMessageDialog(null, "Ocorreu um erro inesperado!\nDetalhes:\n"+ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);

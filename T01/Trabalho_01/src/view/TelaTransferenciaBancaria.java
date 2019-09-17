@@ -5,6 +5,7 @@
  */
 package view;
 
+import javax.swing.JOptionPane;
 import model.TransacaoBancaria;
 
 /**
@@ -193,10 +194,14 @@ public class TelaTransferenciaBancaria extends javax.swing.JFrame {
         tb.setValor(Float.parseFloat(jTextField4.getText().replaceAll(",", ".")));
         tb.setSenha(jPasswordField1.getSelectedText());
         
-        if (jRadioButton1.isSelected()) {
-            tb.sacar();
-        } else if (jRadioButton2.isSelected()) {
-            tb.transferir();
+        try {
+            if (jRadioButton1.isSelected()) {
+                tb.sacar();
+            } else if (jRadioButton2.isSelected()) {
+                tb.transferir();
+            }
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(null, "Ocorreu um erro inesperado!\nDetalhes:\n"+ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 

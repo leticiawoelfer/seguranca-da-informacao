@@ -59,6 +59,9 @@ public class GeraLog {
         }
         df = new SimpleDateFormat("dd/MM/yyyy hh:mm:ss.SSS");
         List<String> lista = new ArrayList<>();
+        if (msg.contains("\n")) {
+            msg = msg.substring(0, msg.indexOf("\n"));
+        }
         lista.add(df.format(new Date()) + " - " + msg);
 
         Files.write(Paths.get(arquivo.getPath()), lista, StandardOpenOption.APPEND);
